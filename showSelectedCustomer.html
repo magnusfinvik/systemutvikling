@@ -1,86 +1,88 @@
 <!DOCTYPE html>
 <html xmlns:i="https://www.w3.org/2001/XMLSchema-instance"
-    xmlns="https://schemas.datacontract.org/2004/07/MorilDataServer.services.database.models"
-    lang="en" xml:lang="en">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://code.jquery.com/jquery-1.12.1.js http://code.jquery.com/ui/1.11.4/jquery-ui.js">
+xmlns="https://schemas.datacontract.org/2004/07/MorilDataServer.services.database.models"
+lang="en" xml:lang="en">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' https://code.jquery.com/jquery-1.12.1.js http://code.jquery.com/ui/1.11.4/jquery-ui.js">
 
-    <head>
-        <title>Morild Data BA </title>
-        <meta charset="UTF-8" />
-        <link rel="shortcut icon" href="../favicon.ico">
-        <link rel="stylesheet" type="text/css" href="css/demo.css" />
-        <link rel="stylesheet" type="text/css" href="css/nav.css">
-        <link rel="stylesheet" type="text/css" href="css/table.css">
-        <link rel="stylesheet" type="text/css" href="css/Background.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="codrops-top">
-                <span class="right">
-                </span>
-                <div class="clr"></div>
-            </div>
-            <header>
-                <h1><b><big>Morild Data BA</big></b></h1>
-            </header>
-            <nav class="menuline">
-                <ul>
+
+<head>
+    <title>Morild Data BA </title>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/table.css">
+    <link rel="stylesheet" type="text/css" href="css/Background.css">
+</head>
+<body>
+    <div class="container">
+        <div class="codrops-top">
+            <span class="right">
+            </span>
+            <div class="clr"></div>
+        </div>
+        <header>
+            <h1><b><big>Morild Data BA</big></b></h1>
+        </header>
+        <nav class="menuline">
+            <ul>
                 <li id="contactIT"><a href="#"> Contact IT </a></li>
                 <li class = "" ><a href="#"> Customers </a>
-                  <ul>
-                    <li><a href="customerPage.html"> Customer list </a>
-                      <li><a href="addNewCustomer.html"> Add new customer</a>
-                  </ul>
-                </li>
-                <li class = "" ><a href = "#"> Users </a>
-                  <ul>
-                    <li><a href="addNewUser.html"> Add new user </a></li>
-                <li><a href="aboutUser.html"> About me </a></li>
-              </ul>
-            </li>
-                <li class = ""  ><a href="#"> Projects </a>
-                <ul>
-                  <li><a href="addNew.html">Add new project </a></li>
-                  <li><a href="getOrder.html"> Get project</a></li>
-                  <li><a href="DisplayProjects.html"> Display projects</a></li>
-                </ul>
-              </li>
-              <li><a href="login.html"> Log out </a></li>
-            </ul>
-            <div align="center">
-            <p id="userBox"></p>
-            </div>
-
-            </nav>
-            <nav>
-                <ul class="emptySpace"></ul>
-            </nav>
-            <section>
-                <div>
-                    <form class="pure-form pure-form-aligned" name="formAddNewCustomer" id:"orders" method="POST" action="https://morilddata.azurewebsites.net/_api/database/customers">
-                      <fieldset>
-                        <br><h2>Edit customer:</h2>
-                        <label for="company"><b>Company:</b></label>
-                        <dd class="text"><input type="text" name="CompanyName" required="required" placeholder="company AS"></dd>
-                        <br><label for="contactPerson"><b>Contact person:</b></label>
-                        <dd class="text"><input type= "text" name="ContactPerson" required="required" placeholder="Ola Nordmann"></dd>
-                        <br><label for="PhoneNumber"><b>Phone number:</b></label>
-                        <dd class="number"><input type="number" name="PhoneNumber" required="required" placeholder="95673498"></dd>
-                        <br><label for="Email"><b>Email:</b></label>
-                        <dd class="email"><input type="email" name="Email" required="required" placeholder="example@domain.no"></dd>
-                        <br><label for="Adress"><b>Adress:</b></label>
-                        <dd class="text"><input type="text" name="Adress" required="required" placeholder="sjøgata 44, 8008 Bodø"></dd>
-                        <br>
-                        <button type="submit" id="add"> Add</button>
-                        <button type="reset" id="clear"> Clear </button>
-                      </fieldset>
-                    </form>
-                </div>
-            </section>
-            <script type='text/javascript' src="https://code.jquery.com/jquery-1.12.1.js"></script>
-            <script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-            <script src="./javascripts/showSelectedCustomerScript.js"></script>
-            <script src="./javascripts/getUser.js"></script>
-            <script src="./javascripts/alertMsg.js"></script>
-</body>
-</html>
+                    <ul>
+                        <li><a href="customerPage.html"> Customer list </a>
+                            <li><a href="addNewCustomer.html"> Add new customer</a>
+                            </ul>
+                        </li>
+                        <li class = "" ><a href = "#"> Users </a>
+                            <ul>
+                                <li><a href="addNewUser.html"> Add new user </a></li>
+                                <li><a href="aboutUser.html"> About me </a></li>
+                            </ul>
+                        </li>
+                        <li class = ""  ><a href="#"> Projects </a>
+                            <ul>
+                                <li><a href="addNew.html">Add new project </a></li>
+                                <li><a href="getOrder.html"> Get project</a></li>
+                                <li><a href="DisplayProjects.html"> Display projects</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="index.html"> Log out </a></li>
+                    </ul>
+                    <div align="center">
+                        <p id="userBox"></p>
+                    </div>
+                    
+                </nav>
+                <nav>
+                    <ul class="emptySpace"></ul>
+                </nav>
+                <section>
+                    <div>
+                        <form class="pure-form pure-form-aligned" name="formAddNewCustomer" id:"orders" method="POST" action="https://morilddata.azurewebsites.net/_api/database/customers">
+                            <fieldset>
+                                <br><h2>Edit customer:</h2>
+                                <label for="company"><b>Company:</b></label>
+                                <dd class="text"><input type="text" name="CompanyName" required="required" placeholder="company AS"></dd>
+                                <br><label for="contactPerson"><b>Contact person:</b></label>
+                                <dd class="text"><input type= "text" name="ContactPerson" required="required" placeholder="Ola Nordmann"></dd>
+                                <br><label for="PhoneNumber"><b>Phone number:</b></label>
+                                <dd class="number"><input type="number" name="PhoneNumber" required="required" placeholder="95673498"></dd>
+                                <br><label for="Email"><b>Email:</b></label>
+                                <dd class="email"><input type="email" name="Email" required="required" placeholder="example@domain.no"></dd>
+                                <br><label for="Adress"><b>Adress:</b></label>
+                                <dd class="text"><input type="text" name="Adress" required="required" placeholder="sjøgata 44, 8008 Bodø"></dd>
+                                <br>
+                                <button type="submit" id="add"> Add</button>
+                                <button type="reset" id="clear"> Clear </button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </section>
+                <script type='text/javascript' src="https://code.jquery.com/jquery-1.12.1.js"></script>
+                <script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+                <script type="text/javascript" src="https://github.com/LexmarkWeb/csi.js.git"></script>
+                <script src="./javascripts/showSelectedCustomerScript.js"></script>
+                <script src="./javascripts/getUser.js"></script>
+                <script src="./javascripts/alertMsg.js"></script>
+            </body>
+            </html>
