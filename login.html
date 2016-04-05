@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'
+      http://code.jquery.com/jquery-1.12.1.js http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js https://morilddata.azurewebsites.net/_api/database/orders">
+
+    <head>
+    <title>Morild Data BA </title>
+        <meta charset="UTF-8" />
+        <title>Login</title>
+        <script type='text/javascript' src="http://code.jquery.com/jquery-1.12.1.js"></script>
+        <script type='text/javascript' src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Login and Registration Form with HTML5 and CSS3" />
+        <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		    <link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+        <link rel="stylesheet" type="text/css" href="css/nav.css">
+        <link rel="stylesheet" type="text/css" href="css/Background.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="codrops-top">
+                <span class="right">
+                </span>
+                <div class="clr"></div>
+            </div>
+            <header>
+                <h1> <b><big>Morild Data BA</b></big> </h1>
+            </header>
+            <nav>
+                <ul class="menuline">
+               <li class = "c1" >
+                    <a href="#" id="contactIT"><b> Contact IT</b> </a>
+                    </li>
+            </nav>
+            <header>
+				<nav class="codrops-demos">
+                 <h1>Login</h1>
+				</nav>
+
+            </header>
+            <section>
+
+                <div id="container_demo" >
+                    <a class="hiddenanchor" id="tologin"></a>
+
+                    <div id="wrapper">
+
+                        <div id="login" class="animate form">
+
+                            <form autocomplete="on">
+                                <p>
+                                    <label for="username" class="uname" data-icon="u" > Your email </label>
+                                    <input id="username" name="username" required="required" type="text" placeholder="example@mail.com"/>
+                                </p>
+                                <p>
+                                    <label for="password" class="youpasswd" data-icon="p"> Your password </label>
+                                    <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" />
+                                </p>
+                                <p class="login button" id="loginButton">
+                                    <input type="button" value="Login" id = "Login"/>
+								</p>
+
+                <div>
+                  <h2 style="color:red;" id="status"></h2>
+
+
+                </div>
+                            </form>
+                        </div>
+                </div>
+            </section>
+        </div>
+
+        <script type='text/javascript' src="./javascripts/loginEncrypt.js"></script>
+        <script type='text/javascript' src="./javascripts/ajaxLogin.js"></script>
+        <script type="text/javascript" src="./javascripts/alertMsg.js"></script>
+    </body>
+</html>

@@ -1,0 +1,170 @@
+/* Datovelger utseende */
+
+input .ui-datepicker {
+   background: #800033;
+   color: #800033;
+ }
+ .ui-datepicker-title {
+ 	font-size:10px;
+    text-align: left;
+}
+.ui-datepicker-prev, .ui-datepicker-next {
+	font-size:10px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.ui-datepicker-prev {
+    float: left;
+    background-position: center -50px;
+}
+.ui-datepicker-next {
+    float: right;
+    background-position: center 0px;
+}
+div.ui-datepicker{
+ font-size:10px;
+}
+
+/* Tabell design: topplinje og linjer */
+table, th, td {
+    border: 1px solid black;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+th {
+	background-color: #d9853b;
+    text-align: left;
+	word-wrap:break-word;
+}
+
+.display{
+    white-space: nowrap;
+    table-layout: fixed;
+    overflow: hidden;
+}
+.display td{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0.3%;
+}
+
+/* Setting the width of tablecolumns */
+.row-description{
+	min-width: 30%;
+
+}
+.row-title{
+    width: auto;
+    text-align: left;
+}
+.row-prioritynumber{
+    width: auto;
+}
+.row-deadline{
+    width: auto;
+}
+.row-orderid{
+    width: auto;
+}
+.row-company{
+    width: auto;
+}
+.row-contactperson{
+    width: auto;
+}
+/* Farge til tabell linjer */
+tr:nth-child(even){background-color: #cccccc
+	}
+tr:nth-child(odd){background-color: #ffffff
+}
+
+/* text on left side in table  */
+th, td {
+    padding: 5px;
+    text-align: left;
+  }
+
+
+ /* Utseende input type text */
+
+ input[type=text] {
+    padding:10px;
+    border-radius: 5px;
+}
+
+input[type=password] {
+    padding:5px;
+    border-radius: 5px;
+}
+
+input[type=number] {
+    padding:5px;
+    border-radius: 5px;
+}
+
+input[type=email] {
+	    padding:5px;
+	    border-radius: 5px;
+}
+/*Utseende til datepicker i addNewOrder*/
+input[type=date]{
+  padding:5px;
+  border-radius: 5px;
+  width: 180px;
+  height: 28px;
+}
+/*Utseende til drop down menyene til company og priority på addNewOrder*/
+.select-company select{
+  padding:5px;
+  border-radius: 5px;
+  width: 195px;
+  height: 40px;
+}
+.select-priority select{
+  padding:5px;
+  border-radius: 5px;
+  width: 195px;
+  height: 40px;
+}
+/* Utseende input type textarea */
+
+input[type=textarea]:focus {
+    border-color:#333;
+}
+label {
+    vertical-align: left;
+}
+body{
+  font:1.2em normal Arial,sans-serif;
+  color:#34495E;
+}
+
+h1{
+  text-align:center;
+  text-transform:uppercase;
+  letter-spacing:-2px;
+  font-size:2.5em;
+  margin:20px 0;
+}
+
+.container{
+  width:90%;
+  margin:auto;
+}
+
+
+/* Change colour on selected column in table */
+tbody tr:hover{
+background:#BDC3C7;
+  color:#FFFFFF;
+}
+

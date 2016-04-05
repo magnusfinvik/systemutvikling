@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'BebasNeueRegular';
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Skrifttype for overskrift
+    Ikke mulig å ha i background-fila
+ */
+section{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.container > header{
+    padding: 20px 30px 10px 30px;
+    margin: 0px 20px 10px 20px;
+    position: relative;
+    display: block;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    text-align: left;
+}
+.container > header h1{
+    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+    line-height: px;
+    position: relative;
+    font-weight: 400;
+    color: #d9853b;
+text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding: 0px 0px 5px 0px;
+}
+.container > header h1 span{
+    color: #7cbcd6;
+    text-shadow: 0px 1px 1px rgba(255,255,255,0.8);
+    }
+.container > header h2{
+    font-size: 16px;
+    font-style: italic;
+    color: #2d6277;
+    text-shadow: 0px 1px 1px rgba(255,255,255,0.8);
+}
+li.c1 a {
+    color: #d9853b;
+    font: bold;
+}

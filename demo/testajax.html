@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:i="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://schemas.datacontract.org/2004/07/MorilDataServer.services.database.models"
+    lang="en" xml:lang="en">
+    <head>
+    <script src="jquery.2.2.1.js"></script>
+    <script src="ajaxGet.js"></script>
+    <script>
+
+    window.onload = function() {
+   document.getElementById("ajax").innerHTML="ajaxKall";
+}
+    </script>
+
+      <meta charset="UTF-8" />
+      <title>Tester ut ajax kall</title>
+
+    </head>
+    <body>
+      <h1>
+        ajaxKall
+      </h1>
+      <a id="ajax" href="testajax.html"></a>
+      <p>en del av body</p>
+    <script> ajaxGet("https://morilddata.azurewebsites.net/_api/database/orders", "", "YWRtaW46YWRtaW4=");</script>
+  </body>
+
+
+</html>
