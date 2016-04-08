@@ -18,16 +18,18 @@ body{
 	font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
 	background-image: url('../images/background1.jpg');
 	background-attachment: fixed;
+	background-size:cover;
+	padding: 20px;
     /*
     background-attachment: scroll;
     background-color: #74afad;
 	background-size: cover;*/
 	background-repeat: no-repeat;
-	background-position: center center;
+	/*background-position: center center;*/
 	font-weight: 400;
 	font-size: 15px;
 	color: #1d3c41;
-	overflow-y: scroll;
+	/*overflow-y: scroll;*/
 }
 .container > header{
 	padding: 20px 30px 10px 30px;
@@ -39,5 +41,18 @@ body{
 }
 /* setter fargen på boksen i midten som inneholder tekstfeltene */
 #content form {
-	background: #74afad;
+	background: #d9d9d9;
+	filter: alpha(opacity=50);
+	opacity: 0.9;
+
+}
+/* Styling for alle inputfelter i addNew*/
+#addNewDiv1 div{
+	margin-left: 20%;
+	margin-right: 60%;
+
+}
+
+#addNewDiv2 div {
+
 }

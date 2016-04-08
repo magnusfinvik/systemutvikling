@@ -1,110 +1,75 @@
-/*nav ul{
- 	overflow: hidden;
- 	color: black;
- 	padding: 5px;
- 	margin: 0;
-  }
-  ul.menuline {
-    list-style-type: none;
-    margin: 60px;
-    padding: 15px;
-    overflow: hidden;
-    background-color: #558c89;
-}
-a{
-  	text-decoration: none;
-  	color: black;
-	font-size: 100%;
-   }
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-}
-nav ul li{
-	display: inline-block;
-   	padding: 10px;
-   }
-nav ul li:hover{
-	background-color: #74afad;
-	padding: 10px;
-}
-html,body {
-	margin:0;
-	padding:0;
-	height: 100%;
-}
-.container{
-	width: 100%;
-	height: 100%;
-	position: relative;
-	text-align: left;
-}*/
-/*nav ul{
-  overflow: hidden;
-  color: black;
-  padding: 5px;
-  margin: 0;
-  }*/
-  .menuline {
-    padding-left: 33%;
-    padding-bottom: 5%;
-  }
-<style type="text/css">
+.menuline {
+  /*margin-left: 37%;*/
+  z-index: 9999;
+  width: 460px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  padding: auto;
 
-ul {
+  font-family: Arial;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 900px) {
+  .menuline {
+    width: 400px;
+  }
+}
+
+.menuline ul {
   display: block;
   list-style: none;
   padding: 5px;
-  margin: 0px;
-  width: 390px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: -5px auto 0 auto;
+  /*width: 450px;*/
   text-align: center;
   float: none;
 }
 
-  ul li {
-    display: block;
-    position: relative;
-    float: left;
-    border:1px solid #000
-  }
-  li ul {
-    display: none;
+.menuline ul li {
+  display: block;
+  position: relative;
+  float: left;
+  border: 1px solid #000;
+  z-index: 9999;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
-  }
+.menuline li ul {
+  display: none;
+}
 
-  ul li a {
-    display: block;
-    position: relative;
-    background: #446f6d;
-    padding: 15px;
-    text-decoration: none;
-    white-space: nowrap;
-    color: #fff;
-  }
+.menuline ul li a {
+  display: block;
+  position: relative;
+  background: #446f6d;
+  padding: 15px;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+  box-sizing: border-box;
+}
 
-  ul li a:hover {
-    background: #558c89;
-  }
-  li:hover ul {
-    display: block;
-    position: absolute;
-  }
-  li:hover li {
-    float: none;
-  }
-  li:hover a {
-    background: #446f6d;
-  }
-  li:hover li a:hover {
-    background: #558c89;
-  }
-/*  #dropNav li ul li {
-    border-top: 5px;
-    border-bottom:10px;
-    text-align: center;
-  }*/
-</style>
+.menuline ul li ul li {
+  text-align: left;
+  margin-left: -6px;
+}
+
+.menuline ul li a:hover {
+  background: #558c89;
+}
+.menuline li:hover ul {
+  display: block;
+  position: absolute;
+}
+.menuline li:hover li {
+  float: none;
+}
+.menuline li:hover a {
+  background: #446f6d;
+}
+.menuline li:hover li a:hover {
+  background: #558c89;
+}

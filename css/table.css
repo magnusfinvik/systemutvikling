@@ -31,17 +31,18 @@ div.ui-datepicker{
 }
 
 /* Tabell design: topplinje og linjer */
-table, th, td {
-    border: 1px solid black;
+.table, .table th, .table td {
+  border: 1px solid black;
 }
-table {
+
+.table {
 	border-collapse:collapse;
 	border-spacing:0;
 }
 
-th {
+.table th {
 	background-color: #d9853b;
-    text-align: left;
+  text-align: left;
 	word-wrap:break-word;
 }
 
@@ -82,13 +83,13 @@ th {
     width: auto;
 }
 /* Farge til tabell linjer */
-tr:nth-child(even){background-color: #cccccc
+.table tr:nth-child(even){background-color: #cccccc
 	}
-tr:nth-child(odd){background-color: #ffffff
+.table tr:nth-child(odd){background-color: #ffffff
 }
 
 /* text on left side in table  */
-th, td {
+.table th, .table td {
     padding: 5px;
     text-align: left;
   }
@@ -163,8 +164,7 @@ h1{
 
 
 /* Change colour on selected column in table */
-tbody tr:hover{
+.table tr:hover{
 background:#BDC3C7;
   color:#FFFFFF;
 }
-

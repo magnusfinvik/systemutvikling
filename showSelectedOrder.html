@@ -46,7 +46,7 @@
           <li><a href="displayProjects.html"> Display projects</a></li>
         </ul>
       </li>
-      <li><a href="index.html"> Log out </a></li>
+      <li><a href="login.html"> Log out </a></li>
     </ul>
     <div align="center">
     <p id="userBox"></p>
@@ -55,7 +55,7 @@
             <nav>
                 <ul class="emptySpace"></ul>
             </nav>
-            <section>
+            <section id="content">
                     <form name="formAddNew" id="orders" onsubmit="handleFormOrder(this)">
                         <fieldset>
                             <h2>Edit project:</h2>
@@ -65,7 +65,7 @@
                                 <form class="form-inline">
                               <div class="form-group">
                                 <label for="headline"> <b>Title:</b></label><br>
-                                <input type="text" class="form-control" id="headline" placeholder="Project title" required="required">
+                                <input type="text" class="form-control" name="Headline" id="headline" placeholder="Project title" required="required">
 
                             </div>
 

@@ -1,0 +1,45 @@
+#newProjectForm h3 {
+  text-align: center;
+}
+
+#newProjectForm {
+  width: 725px;
+  margin: 10px auto;
+  padding-top: 5px;
+  padding-bottom: 25px;
+}
+
+#newProjectForm select {
+  width: 190px;
+  height: 35px;
+  box-sizing: border-box;
+}
+
+#newProjectForm table td {
+  padding: 15px;
+}
+
+#newProjectForm table tr {
+  vertical-align: top;
+}
+
+#newProjectForm table tr td table tr td {
+  height: 40px;
+}
+
+#newProjectForm .right {
+  text-align: right;
+}
+
+#newProjectForm textarea {
+  height: 182px;
+  width: 190px;
+  max-width: 190px;
+  max-height: 182px;
+  box-sizing: border-box;
+}
+
+#newProjectForm input[type=text] {
+  width: 190px;
+  box-sizing: border-box;
+}

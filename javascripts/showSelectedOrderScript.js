@@ -36,7 +36,7 @@ $(function (){
     //$('#priorityButtons').prop("checked", true);
     $('#datepicker').val(convertedDate);
     $('input[name="ContactPerson"]').val(contact);
-    $("#descBox").val(desc);
+    $("#description").val(desc);
 
     function addOrder(order) {
         orders.append('<li> Headline:' + order.Headline +  'Company: '+ order.CompanyName +  ' CompanyId: ' + order.CompanyId + '  PriorityNumber: ' + order.PriorityNumber + ' Deadline: ' +  order.Deadline + ' ContactPerson: ' + order.ContactPerson + 'Description' + order.Description +  '</li>');
